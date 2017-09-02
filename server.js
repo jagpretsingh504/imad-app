@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 });
 
 function hash (input, salt) {
-    var hashed = cyrpto.pbkdf2Sync(imput, salt, 10000, 512, 'sha512'); 
+    var hashed = cyrpto.pbkdf2Sync(input, salt, 10000, 512, 'sha512'); 
     return hashed.toString('hex');
 }
 
