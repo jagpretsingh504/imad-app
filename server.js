@@ -64,7 +64,7 @@ app.post('/login', function(req, res){
               if(hashedPAssword === dbstring){
                   res.send('Logged in');
               }else{
- res.send('USer Suceesfully Created: ' + username);
+ res.send('username/password invalid');
               }
           }
 
